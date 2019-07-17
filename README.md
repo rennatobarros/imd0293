@@ -1,4 +1,4 @@
-# Repositório GitHub para IMD0293 - Tópicos Especiais em IoT
+# Repositório GitHub para IMD0293 [Prof. Danilo Curvelo]
 
 Repositório de atividades práticas laboratoriais para a disciplina IMD0293. Neste repositório você irá encontrar os códigos-fonte para realização das atividades práticas.
 
@@ -8,9 +8,7 @@ O repositório está dividido conforme a execução das aulas de 2019.2.
 
 ## Projetos
 
-blockchain-python
-
-```bash
+```
 .
 ├── blockchain-python
 │   ├── 01-hashing
