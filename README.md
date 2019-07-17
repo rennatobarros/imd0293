@@ -1,4 +1,4 @@
-# Repositório GitHub para IMD0293 [Prof. Danilo Curvelo]
+# Repositório GitHub para IMD0293 [Prof. Danilo Curvelo](https://github.com/danilocurvelo/)
 
 Repositório de atividades práticas laboratoriais para a disciplina IMD0293. Neste repositório você irá encontrar os códigos-fonte para realização das atividades práticas.
 
