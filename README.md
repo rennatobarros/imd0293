@@ -16,7 +16,7 @@ blockchain-python
 │   ├── 01-hashing
 │   │   ├── blockchain.py
 │   │   └── blockchain.solution.py
-│   └── 02-blocks      └── blockchain.solution.py
+│   └── 02-blocks
 ├── intro-truffle
 └── intro-solidity
 
