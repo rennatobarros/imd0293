@@ -12,13 +12,21 @@ O repositório está dividido conforme a execução das aulas de 2019.2.
 .
 ├── blockchain-python
 │   ├── 01-hashing
-│   │   ├── blockchain.py
-│   │   └── blockchain.solution.py
-│   └── 02-blocks
+│   │   └── blockchain.py
+│   ├── 02-blocks
+│   │   └── blockchain.py
+|   ├── 03-proof-of-work
+│   │   └── blockchain.py
+|   ├── 04-transactions
+│   │   └── blockchain.py
+|   ├── 05-api
+│   │   └── blockchain.py
+│   └── 06-consensus
+│       └── blockchain.py
 ├── intro-truffle
 └── intro-solidity
 
 ```
 
-## License
+## Licença
 [MIT](https://choosealicense.com/licenses/mit/)
