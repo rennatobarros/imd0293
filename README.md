@@ -17,11 +17,13 @@ O repositório está dividido conforme a execução das aulas de 2019.2.
 │   │   └── blockchain.py
 |   ├── 03-proof-of-work
 │   │   └── blockchain.py
-|   ├── 04-transactions
+|   ├── 04-sign-and-verify
 │   │   └── blockchain.py
-|   ├── 05-api
+|   ├── 05-transactions
 │   │   └── blockchain.py
-│   └── 06-consensus
+|   ├── 06-api
+│   │   └── blockchain.py
+│   └── 07-consensus
 │       └── blockchain.py
 ├── intro-truffle
 └── intro-solidity
