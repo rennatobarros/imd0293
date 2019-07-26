@@ -4,7 +4,7 @@ Esta atividade tem como objetivo implementar o primeiro método no desenvolvimen
 
 ## Instalação
 
-Baixe o arquivo `blockchain.py` para obter o *boilerplate* para esta atividade. Caso seja necessário, utilize o gerenciador de pacotes [pip](https://pip.pypa.io/en/stable/) para instalar os módulos necessários.
+Baixe o arquivo `./blockchain.py` para obter o *boilerplate* para esta atividade. Caso seja necessário, utilize o gerenciador de pacotes [pip](https://pip.pypa.io/en/stable/) para instalar os módulos necessários.
 
 ## Descrição
 
