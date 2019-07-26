@@ -12,12 +12,16 @@ pip install hashlib
 
 ## Descrição
 
-Importe o módulo ``hashlib`` no seu arquivo.
+Importe o módulo `hashlib` no seu arquivo.
+
 Implemente o método `generateHash`.
 
-```python
-import hashlib
+## Dicas
 
+Usar `json.dumps()` do módulo `json` para serializar o objeto antes, e lembrar de manter a estrutura sempre ordenada (`sort_keys=True`)
+
+```python
+json.dumps(data, sort_keys=True)
 ```
 ## Licença
 [MIT](https://choosealicense.com/licenses/mit/)
