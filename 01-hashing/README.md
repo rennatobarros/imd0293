@@ -4,7 +4,7 @@ Esta atividade tem como objetivo implementar o primeiro método no desenvolvimen
 
 ## Instalação
 
-Caso seja necessário, utilize o gerenciador de pacotes [pip](https://pip.pypa.io/en/stable/) para instalar os módulos necessários.
+Baixe o arquivo `blockchain.py` para obter o *boilerplate* para esta atividade. Caso seja necessário, utilize o gerenciador de pacotes [pip](https://pip.pypa.io/en/stable/) para instalar os módulos necessários.
 
 ## Descrição
 
@@ -16,6 +16,8 @@ def generateHash(data):
 ```
 
 Importe o módulo `hashlib` a sua classe e implemente o método `generateHash` para retornar a string referente ao *hash* **SHA256** do argumento passado. Note que o argumento passado pode ser um objeto, portanto serialize o argumento antes (veja em *Dicas*).
+
+O arquivo contém um simples testes para verificar se o *output* do seu método está retornando o *hash* esperado para o *input* fornecido.
 
 ## Dicas
 
