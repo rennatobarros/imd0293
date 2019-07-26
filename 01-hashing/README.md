@@ -4,11 +4,7 @@ Esta atividade tem como objetivo implementar o primeiro método no desenvolvimen
 
 ## Instalação
 
-Use o gerenciador de pacotes [pip](https://pip.pypa.io/en/stable/) para instalar o módulo `hashlib`.
-
-```bash
-pip install hashlib
-```
+Caso seja necessário, utilize o gerenciador de pacotes [pip](https://pip.pypa.io/en/stable/) para instalar os módulos necessários.
 
 ## Descrição
 
