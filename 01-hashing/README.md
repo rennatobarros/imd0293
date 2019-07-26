@@ -10,7 +10,10 @@ Use o gerenciador de pacotes [pip](https://pip.pypa.io/en/stable/) para instalar
 pip install hashlib
 ```
 
-## Uso
+## Descrição
+
+Importe o módulo ``hashlib`` no seu arquivo.
+Implemente o método `generateHash`.
 
 ```python
 import hashlib
