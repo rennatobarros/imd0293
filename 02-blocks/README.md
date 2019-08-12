@@ -22,11 +22,9 @@ def createBlock(self, nonce=0, previousHash=None)
 ```
 Note que o construtor foi definido, assim como algumas atributos e métodos da classe `Blockchain`:
 
-`chain` : uma lista de blocos, representando o blockchain;
-
-`memPool` : o *memory pool*, responsável por armazenar, temporariamente, transações que aidna não foram incluídas em um bloco;
-
-`createGenesisBlock()` : método responsável por criar o primeiro bloco do blockchain, também conhecido como o bloco Genêsis.
+- `chain` : uma lista de blocos, representando o blockchain;
+- `memPool` : o *memory pool*, responsável por armazenar, temporariamente, transações que aidna não foram incluídas em um bloco;
+- `createGenesisBlock()` : método responsável por criar o primeiro bloco do blockchain, também conhecido como o bloco Genêsis.
 
 ## Dicas
 
