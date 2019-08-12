@@ -33,6 +33,14 @@ block = {
 }
 ```
 
+Onde:
+
+- `index`: índice do bloco, que representa a profundidade do bloco no blockchain (o bloco genesis tem `index` 0);
+- `timestamp` : data (formato unix) de criação do novo bloco;
+- `transactions` : lista de transações incluídas no bloco;
+- `nonce` : por enquanto pode deixar esse atributo com valor 0;
+- `merkleRoot` : por enquanto pode deixar esse atributo com valor 0;
+- `previousHash` : *hash* do cabeçalho do bloco anterior. O cabeçalho é formado pelos campos `index`, `timestamp`, `nonce`, `merkelRoot` e `previousHash`.
 
 A assinatura do método já está presente na classe `Blockchain`:
 
