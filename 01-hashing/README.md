@@ -27,7 +27,7 @@ O arquivo contém um simples teste para verificar se o *output* do seu método e
 
 ## Dicas
 
-Confira a documentação do hashlib: [https://docs.python.org/3/library/hashlib.html]
+Confira a documentação do hashlib [https://docs.python.org/3/library/hashlib.html] para verificar como utilizar a função SHA256.
 
 Usar `json.dumps()` do módulo `json` para serializar o objeto de entrada em uma string no formato JSON antes, e lembrar de manter a estrutura sempre ordenada (`sort_keys=True`). Assim temos a garantia de que a função irá retornar o mesmo *hash* independentemente da ordem em que as chaves são apresentadas, crucial para validação de algumas estruturas de nosso blockchain.
 
