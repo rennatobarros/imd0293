@@ -23,7 +23,7 @@ def generateHash(data):
 
 Importe o módulo `hashlib` a sua classe e implemente o método `generateHash` para retornar a string referente ao *hash* **SHA256** do argumento passado. Note que o argumento passado pode ser um objeto, portanto serialize o argumento antes (veja em [Dicas](#dicas)).
 
-O arquivo contém um simples testes para verificar se o *output* do seu método está retornando o *hash* esperado para o *input* fornecido.
+O arquivo contém um simples teste para verificar se o *output* do seu método está retornando o *hash* esperado para o *input* fornecido.
 
 ## Dicas
 
