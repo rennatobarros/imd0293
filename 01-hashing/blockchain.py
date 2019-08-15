@@ -8,8 +8,8 @@ class Blockchain(object):
         # Confira a documentação do hashlib: https://docs.python.org/3/library/hashlib.html
         # Note que o argumento passado pode ser um objeto, portanto serialize o argumento antes.
         # Dica: Use o json.dumps() do módulo json.
-        data_byte = json.dumps(data).encode()
-        return hashlib.sha256(data_byte, sort_keys=True).hexdigest()
+        data_byte = json.dumps(data, sort_keys=True).encode()
+        return hashlib.sha256(data_byte).hexdigest()
 
 
 # Testando sua implementação: espera-se um retorno True.
