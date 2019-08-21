@@ -23,10 +23,10 @@ class Blockchain(object):
             previousHash = '0000000000000000000000000000000000000000000000000000000000000000'
 
         block = {
-            'index': len(self.chain),
+            'index': len(self.chain) + 1,
             'timestamp': int(time.time()),
             'nonce': 0,
-            'merkleRoot': 0,
+            'merkleRoot': 0000000000000000000000000000000000000000000000000000000000000000,
             'previousHash': previousHash,
             'transactions': []
         }
@@ -45,7 +45,18 @@ class Blockchain(object):
 
     def printChain(self):
         # Implemente aqui um método para imprimir de maneira verbosa e intuitiva o blockchain atual.
-        for 
+        for block in reversed(self.chain):
+            self_hash = self.generateHash(block)
+
+            print(' ________________________________________________________________ ')
+            print('| {} |'.format(self_hash))
+            print('----------------------------------------------------------------- ')
+            print('Indíce:' .format(block['index']))
+            print('| Timestamp: ', block['timestamp'])
+            print('| Nonce: ', block['nonce'])
+            print('| merkleRoot: ', block['merkleRoot'])
+            print('| previousHash: ', block['previousHash'])
+            print('| ==================================================================================\n\n')
 
 
 
