@@ -1,4 +1,4 @@
-import hashlib, json, time
+import hashlib, json, time, copy
 
 class Blockchain(object):
 
@@ -16,7 +16,7 @@ class Blockchain(object):
         # Implemente aqui o método para retornar um bloco (formato de dicionário)
         # Lembre que o hash do bloco anterior é o hash na verdade do CABEÇALHO do bloco anterior.
         if self.chain:
-            previous_block = self.chain[-1]
+            previous_block = copy.deepcopy(self.chain[-1])
             previous_block.pop('transactions')
             previousHash = self.generateHash(previous_block)
         else:
@@ -45,16 +45,20 @@ class Blockchain(object):
 
     def printChain(self):
         # Implemente aqui um método para imprimir de maneira verbosa e intuitiva o blockchain atual.
-        for block in reversed(self.chain):
+        for b in reversed(self.chain):
+            
+            block = copy.deepcopy(b)
+            block.pop('transactions')
             self_hash = self.generateHash(block)
 
             print(' ________________________________________________________________ ')
             print('| {} |'.format(self_hash))
             print('----------------------------------------------------------------- ')
-            print('Indíce:' .format(block['index']))
+            print('| Indíce:', block['index'])
             print('| Timestamp: ', block['timestamp'])
             print('| Nonce: ', block['nonce'])
             print('| merkleRoot: ', block['merkleRoot'])
+            print('| Transactions: ', b['transactions'])
             print('| previousHash: ', block['previousHash'])
             print('| ==================================================================================\n\n')
 
