@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 import hashlib, json, time, copy
+=======
+import hashlib
+import json
+>>>>>>> 6a23b129ed4351568f66539346af53902062300a
 
 class Blockchain(object):
 
@@ -10,6 +15,7 @@ class Blockchain(object):
     def createGenesisBlock(self):
         # Implemente aqui o método para gerar o bloco Genesis, invocado no construtor da classe,
         # chamando o método createBlock() previamente implementado.
+<<<<<<< HEAD
         self.createBlock() 
 
     def createBlock(self):
@@ -63,12 +69,30 @@ class Blockchain(object):
             print('| ==================================================================================\n\n')
 
 
+=======
+        pass 
+
+    def createBlock(self, nonce=0, previousHash=None):
+        # Implemente aqui o método para retornar um bloco (formato de dicionário)
+        # Lembre que o hash do bloco anterior é o hash na verdade do CABEÇALHO do bloco anterior.
+        pass
+
+    @staticmethod
+    def generateHash(data):
+        blkSerial = json.dumps(data, sort_keys=True).encode()
+        return hashlib.sha256(blkSerial).hexdigest()
+
+    def printChain(self):
+        # Implemente aqui um método para imprimir de maneira verbosa e intuitiva o blockchain atual.
+        pass
+>>>>>>> 6a23b129ed4351568f66539346af53902062300a
 
 # Teste
 blockchain = Blockchain()
 for x in range(0, 3): blockchain.createBlock()
 blockchain.printChain()
 
+<<<<<<< HEAD
 
 
 # Testando sua implementação: espera-se um retorno True.
@@ -83,3 +107,5 @@ var1_hash = Blockchain.generateHash(var1)
 #print('Hash   gerado: {}'.format(var1_hash))
 #print('Hash esperado: {}'.format(expected_hash1))
 #print('Iguais? {}\n'.format(expected_hash1==var1_hash))
+=======
+>>>>>>> 6a23b129ed4351568f66539346af53902062300a
