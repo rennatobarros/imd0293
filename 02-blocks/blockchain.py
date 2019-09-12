@@ -81,8 +81,4 @@ var1_hash = Blockchain.generateHash(var1)
 #print('Dados: {}'.format(var1))
 #print('Hash   gerado: {}'.format(var1_hash))
 #print('Hash esperado: {}'.format(expected_hash1))
-<<<<<<< HEAD
 #print('Iguais? {}\n'.format(expected_hash1==var1_hash))
-=======
-#print('Iguais? {}\n'.format(expected_hash1==var1_hash))
->>>>>>> 0714e162fdf9456aaa8a0d37bb7ac8bb4eb69337
