@@ -75,11 +75,11 @@ class Blockchain(object):
             print(' ________________________________________________________________ ')
             print('| {} |'.format(self_hash))
             print('----------------------------------------------------------------- ')
-            print('| Indíce:', block['index'])
-            print('| Timestamp: ', block['timestamp'])
-            print('| Nonce: ', block['nonce'])
-            print('| merkleRoot: ', block['merkleRoot'])
-            print('| previousHash: ', block['previousHash'])
+            print('| Indíce:', b['index'])
+            print('| Timestamp: ', b['timestamp'])
+            print('| Nonce: ', b['nonce'])
+            print('| merkleRoot: ', b['merkleRoot'])
+            print('| previousHash: ', b['previousHash'])
             print('| ==================================================================================\n\n')
 
     @property
@@ -91,6 +91,8 @@ blockchain = Blockchain()
 for x in range(0, 4): 
     blockchain.createBlock()
     blockchain.mineProofOfWork(blockchain.prevBlock)
+
+blockchain.printChain()
 
 for x in blockchain.chain :
     print('[Bloco #{} : {}] Nonce: {} | É válido? {}'.format(x['index'], Blockchain.getBlockID(x), x['nonce'], Blockchain.isValidProof(x, x['nonce'])))
